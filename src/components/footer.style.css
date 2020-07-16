@@ -1,0 +1,19 @@
+footer {
+	text-align: center;
+	background-color: #3f51b5;
+	color: #fff;
+	width: 100%;
+    height: 60px;
+	position: absolute;
+	bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(129, 199, 132);
+}
+
+a:hover {
+    color: #fff;
+
+}
