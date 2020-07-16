@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { v4 } from 'uuid';
 import './App.css';
 import TodoForm from './components/todoForm.component';
@@ -45,12 +45,12 @@ const deleteTodo = (id) => {
 }
 
   return (
-    <div>
+    <Fragment>
       <Header />
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} checkTodo={checkTodo} deleteTodo={deleteTodo} />
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 

@@ -6,7 +6,7 @@ const Todo = ({ title, checkTodo, id, isCompleted, deleteTodo }) => {
     const markComplete = () => checkTodo(id);
     const delTodo = () => deleteTodo(id);
     const todoStyle = isCompleted // changing the style when the task is checked
-    ? { textDecoration: "line-through" } 
+    ? { textDecoration: "line-through", color: 'grey', fontWeight: 400 } 
     : { textDecoration: "none" }
 
     return(
@@ -15,10 +15,11 @@ const Todo = ({ title, checkTodo, id, isCompleted, deleteTodo }) => {
             <Card variant="outlined" style={{
                 // height: '40%',
                 marginTop: 30,
-                background: '#81c784'
+                background: '#81c784',
+                fontWeight: 400
             }}>
-                <CardContent>
-                <Typography variant="h5" component="h2" style={todoStyle}>
+                <CardContent style={{ padding: 5 }} >
+                <Typography variant="h6" component="h5" style={todoStyle}>
                 <IconButton onClick={markComplete}>
                 <Check style={{ color: 'green' }} />
                 </IconButton>

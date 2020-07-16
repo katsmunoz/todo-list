@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core';
 
 const Footer = () => (
     <footer>
-        <Typography style={{ marginTop: '10px' }} >&copy; { new Date().getFullYear() } - Made with<FavoriteIcon style={{ color: 'red', height: '16px' }} />
+        <Typography style={{ marginTop: '10px', fontWeight: 400 }} >&copy; { new Date().getFullYear() } - Made with<FavoriteIcon style={{ color: 'red', height: '16px' }} />
         by <a href='https://katsmunoz.github.io/' target="_blank">Katherine Muñoz</a>
             </Typography>
     </footer>
