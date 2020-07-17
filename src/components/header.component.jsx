@@ -7,7 +7,7 @@ const Header = () => (
         <Toolbar>
             <img src={logo} alt="logo" width="32" height="32"></img>
             &nbsp;&nbsp;
-            <h1>ToDo App</h1>
+            <h1>Todo App</h1>
         </Toolbar>
     </AppBar>
 );
