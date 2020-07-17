@@ -3,7 +3,7 @@ import { v4 } from 'uuid';
 import './App.css';
 import TodoForm from './components/todoForm.component';
 import TodoList from './components/todoList.component';
-import Footer from './components/footer.component';
+// import Footer from './components/footer.component';
 import Header from './components/header.component';
 
 function App() {
@@ -49,7 +49,7 @@ const deleteTodo = (id) => {
       <Header />
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} checkTodo={checkTodo} deleteTodo={deleteTodo} />
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 }
